@@ -11,8 +11,7 @@ appVersion: v0.66.0
 dependencies:
 - condition: crds.enabled
   name: crds
-  repository: ""
-  version: 0.0.0
+  repository: file://./charts/crds
 - condition: grafana.enabled
   name: grafana
   repository: file://./charts/grafana
