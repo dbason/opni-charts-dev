@@ -1,11 +1,9 @@
 #!/bin/bash
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-
 if [[ $(uname -s) = "Darwin" ]]; then
-    VERSION="$(grep ^appVersion "${SCRIPT_DIR}/../Chart.yaml" | sed 's/appVersion: //g')"
+    VERSION="$(grep ^appVersion ../Chart.yaml | sed 's/appVersion: //g')"
 else
-    VERSION="$(grep ^appVersion "${SCRIPT_DIR}/../Chart.yaml" | sed 's/appVersion:\s//g')"
+    VERSION="$(grep ^appVersion ../Chart.yaml | sed 's/appVersion:\s//g')"
 fi
 
 FILES=(
@@ -13,10 +11,8 @@ FILES=(
   "crd-alertmanagers.yaml       :  monitoring.coreos.com_alertmanagers.yaml"
   "crd-podmonitors.yaml         :  monitoring.coreos.com_podmonitors.yaml"
   "crd-probes.yaml              :  monitoring.coreos.com_probes.yaml"
-  "crd-prometheusagents.yaml    :  monitoring.coreos.com_prometheusagents.yaml"
   "crd-prometheuses.yaml        :  monitoring.coreos.com_prometheuses.yaml"
   "crd-prometheusrules.yaml     :  monitoring.coreos.com_prometheusrules.yaml"
-  "crd-scrapeconfigs.yaml       :  monitoring.coreos.com_scrapeconfigs.yaml"
   "crd-servicemonitors.yaml     :  monitoring.coreos.com_servicemonitors.yaml"
   "crd-thanosrulers.yaml        :  monitoring.coreos.com_thanosrulers.yaml"
 )
@@ -29,9 +25,9 @@ for line in "${FILES[@]}"; do
 
     echo -e "Downloading Prometheus Operator CRD with Version ${VERSION}:\n${URL}\n"
 
-    echo "# ${URL}" > "${SCRIPT_DIR}/../charts/crds/crds/${DESTINATION}"
+    echo "# ${URL}" > ../crds/"${DESTINATION}"
 
-    if ! curl --silent --retry-all-errors --fail --location "${URL}" >> "${SCRIPT_DIR}/../charts/crds/crds/${DESTINATION}"; then
+    if ! curl --silent --retry-all-errors --fail --location "${URL}" >> ../crds/"${DESTINATION}"; then
       echo -e "Failed to download ${URL}!"
       exit 1
     fi

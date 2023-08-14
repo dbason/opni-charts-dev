@@ -13,9 +13,9 @@ dependencies:
 - condition: opni-agent.enabled
   name: opni-agent
   repository: file://./charts/opni-agent
-- condition: prometheus-crds.enabled
-  name: prometheus-crds
-  repository: file://./charts/prometheus-crds
+- condition: opni-prometheus-crd.enabled
+  name: opni-prometheus-crd
+  repository: file://./charts/opni-prometheus-crd
 description: Multi Cluster Observability with AIOps
 icon: https://raw.githubusercontent.com/rancher/opni-docs/main/docs/assets/icon-opni.svg
 keywords:

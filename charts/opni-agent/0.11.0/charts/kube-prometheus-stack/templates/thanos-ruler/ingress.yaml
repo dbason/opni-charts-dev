@@ -1,6 +1,6 @@
 {{- if and .Values.thanosRuler.enabled .Values.thanosRuler.ingress.enabled }}
 {{- $pathType := .Values.thanosRuler.ingress.pathType | default "ImplementationSpecific" }}
-{{- $serviceName := include "kube-prometheus-stack.thanosRuler.name" . }}
+{{- $serviceName := printf "%s-%s" (include "kube-prometheus-stack.fullname" .) "thanos-ruler" }}
 {{- $servicePort := .Values.thanosRuler.service.port -}}
 {{- $routePrefix := list .Values.thanosRuler.thanosRulerSpec.routePrefix }}
 {{- $paths := .Values.thanosRuler.ingress.paths | default $routePrefix -}}
@@ -16,7 +16,7 @@ metadata:
 {{ toYaml .Values.thanosRuler.ingress.annotations | indent 4 }}
 {{- end }}
   labels:
-    app: {{ template "kube-prometheus-stack.thanosRuler.name" . }}
+    app: {{ template "kube-prometheus-stack.name" . }}-thanos-ruler
 {{- if .Values.thanosRuler.ingress.labels }}
 {{ toYaml .Values.thanosRuler.ingress.labels | indent 4 }}
 {{- end }}
