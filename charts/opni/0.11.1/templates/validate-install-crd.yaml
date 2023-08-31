@@ -17,11 +17,11 @@
 # {{- set $found "logging.opni.io/v1beta1/MulticlusterUser" false -}}
 # {{- set $found "core.opni.io/v1beta1/NatsCluster" false -}}
 # {{- set $found "opensearch.opster.io/v1/OpenSearchCluster" false -}}
+# {{- set $found "logging.opni.io/v1beta1/OpensearchRepository" false -}}
 # {{- set $found "ai.opni.io/v1beta1/OpniCluster" false -}}
 # {{- set $found "logging.opni.io/v1beta1/OpniOpensearch" false -}}
 # {{- set $found "logging.opni.io/v1beta1/Preprocessor" false -}}
 # {{- set $found "ai.opni.io/v1beta1/PretrainedModel" false -}}
-# {{- set $found "monitoring.opni.io/v1beta1/RoleBinding" false -}}
 # {{- set $found "logging.opni.io/v1beta1/RecurringSnapshot" false -}}
 # {{- set $found "monitoring.opni.io/v1beta1/RoleBinding" false -}}
 # {{- set $found "monitoring.opni.io/v1beta1/Role" false -}}
