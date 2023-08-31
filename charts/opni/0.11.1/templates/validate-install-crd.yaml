@@ -22,7 +22,10 @@
 # {{- set $found "logging.opni.io/v1beta1/Preprocessor" false -}}
 # {{- set $found "ai.opni.io/v1beta1/PretrainedModel" false -}}
 # {{- set $found "monitoring.opni.io/v1beta1/RoleBinding" false -}}
+# {{- set $found "logging.opni.io/v1beta1/RecurringSnapshot" false -}}
+# {{- set $found "monitoring.opni.io/v1beta1/RoleBinding" false -}}
 # {{- set $found "monitoring.opni.io/v1beta1/Role" false -}}
+# {{- set $found "logging.opni.io/v1beta1/Snapshot" false -}}
 # {{- range .Capabilities.APIVersions -}}
 # {{- if hasKey $found (toString .) -}}
 # 	{{- set $found (toString .) true -}}

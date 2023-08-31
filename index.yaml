@@ -9,7 +9,7 @@ entries:
       catalog.rancher.io/release-name: opni
     apiVersion: v2
     appVersion: 0.11.1
-    created: "2023-08-21T01:51:30.344648025Z"
+    created: "2023-08-31T00:19:51.995849751Z"
     dependencies:
     - condition: opni-agent.kube-prometheus-stack.enabled
       name: kube-prometheus-stack
@@ -21,7 +21,7 @@ entries:
       name: prometheus-crds
       repository: file://./charts/prometheus-crds
     description: Multi Cluster Observability with AIOps
-    digest: 4e4a46b9d010026de206b5e7131c1b731262a724141095fe4e698c29cf253643
+    digest: ffa4088db6ef0c564770510e831998a555bda88c67ce7e5f388ab89cf923b418
     icon: https://raw.githubusercontent.com/rancher/opni-docs/main/docs/assets/icon-opni.svg
     keywords:
     - opni
@@ -47,13 +47,13 @@ entries:
       catalog.rancher.io/release-name: opni-agent
     apiVersion: v2
     appVersion: 0.11.1
-    created: "2023-08-21T01:52:24.516966796Z"
+    created: "2023-08-31T00:20:46.359224958Z"
     dependencies:
     - condition: kube-prometheus-stack.enabled
       name: kube-prometheus-stack
       repository: file://./charts/kube-prometheus-stack
     description: Opni Agent
-    digest: 62a47c97389b2be3eb62a98c12691a2dae375c7166ab1c97b951b33966738c9b
+    digest: aba4c43f0332fd6d97d524acf9c3348a1df8479bf51f5b7bfb3fc233141cb5ac
     name: opni-agent
     type: application
     urls:
@@ -65,9 +65,9 @@ entries:
       catalog.cattle.io/namespace: opni-cluster-system
       catalog.cattle.io/release-name: opni-crd
     apiVersion: v1
-    created: "2023-08-21T01:51:30.346352437Z"
+    created: "2023-08-31T00:19:51.997233265Z"
     description: Installs the CRDs for Opni.
-    digest: aaa7b9dff03228f18dcee59f538a5f87a991168ef7f441dd2660abfb5e728687
+    digest: 5b1fa1e502fcd3a2f04127e2364152ae7fe232dc06c46b183e03742cdefed987
     maintainers:
     - email: joe.kralicky@suse.com
       name: Joe Kralicky
@@ -78,4 +78,4 @@ entries:
     urls:
     - assets/opni-crd/opni-crd-0.11.1.tgz
     version: 0.11.1
-generated: "2023-08-21T01:51:30.317125924Z"
+generated: "2023-08-31T00:19:51.96709406Z"
