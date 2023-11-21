@@ -18,6 +18,7 @@
 # {{- set $found "core.opni.io/v1beta1/NatsCluster" false -}}
 # {{- set $found "opensearch.opster.io/v1/OpenSearchCluster" false -}}
 # {{- set $found "logging.opni.io/v1beta1/OpensearchRepository" false -}}
+# {{- set $found "opensearch.opster.io/v1/OpensearchRole" false -}}
 # {{- set $found "ai.opni.io/v1beta1/OpniCluster" false -}}
 # {{- set $found "logging.opni.io/v1beta1/OpniOpensearch" false -}}
 # {{- set $found "logging.opni.io/v1beta1/Preprocessor" false -}}
