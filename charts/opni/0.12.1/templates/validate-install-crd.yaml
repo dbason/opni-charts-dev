@@ -4,10 +4,9 @@
 # {{- set $found "core.opni.io/v1beta1/BootstrapToken" false -}}
 # {{- set $found "logging.opni.io/v1beta1/DataPrepper" false -}}
 # {{- set $found "core.opni.io/v1beta1/Gateway" false -}}
-# {{- set $found "grafana.opni.io/v1alpha1/GrafanaDashboard" false -}}
-# {{- set $found "grafana.opni.io/v1alpha1/GrafanaDataSource" false -}}
-# {{- set $found "grafana.opni.io/v1alpha1/GrafanaNotificationChannel" false -}}
-# {{- set $found "grafana.opni.io/v1alpha1/Grafana" false -}}
+# {{- set $found "grafana.opni.io/v1beta1/GrafanaDashboard" false -}}
+# {{- set $found "grafana.opni.io/v1beta1/GrafanaDatasource" false -}}
+# {{- set $found "grafana.opni.io/v1beta1/Grafana" false -}}
 # {{- set $found "core.opni.io/v1beta1/Keyring" false -}}
 # {{- set $found "logging.opni.io/v1beta1/LogAdapter" false -}}
 # {{- set $found "logging.opni.io/v1beta1/LoggingClusterBinding" false -}}

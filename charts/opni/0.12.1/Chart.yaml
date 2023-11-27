@@ -1,11 +1,11 @@
 annotations:
   catalog.cattle.io/auto-install: opni-crd=match
   catalog.cattle.io/display-name: Opni
+  catalog.cattle.io/namespace: opni
   catalog.cattle.io/os: linux
-  catalog.rancher.io/namespace: opni-cluster-system
-  catalog.rancher.io/release-name: opni
+  catalog.cattle.io/release-name: opni
 apiVersion: v2
-appVersion: 0.12.0
+appVersion: 0.12.1
 dependencies:
 - condition: opni-agent.kube-prometheus-stack.enabled
   name: kube-prometheus-stack
@@ -31,4 +31,4 @@ maintainers:
   name: Dan Bason
 name: opni
 type: application
-version: 0.12.0
+version: 0.12.1
