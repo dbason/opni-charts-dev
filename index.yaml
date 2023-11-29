@@ -9,7 +9,7 @@ entries:
       catalog.cattle.io/release-name: opni
     apiVersion: v2
     appVersion: 0.12.1
-    created: "2023-11-27T22:41:58.559602059Z"
+    created: "2023-11-29T00:53:29.589437567Z"
     dependencies:
     - condition: opni-agent.kube-prometheus-stack.enabled
       name: kube-prometheus-stack
@@ -21,7 +21,7 @@ entries:
       name: prometheus-crds
       repository: file://./charts/prometheus-crds
     description: Multi Cluster Observability with AIOps
-    digest: f38eb924e3aeca774a0f5f4dc62e73b4b7644d1eda6c094bfe038c8055738dee
+    digest: 1f217045e81e7fb52c28322ba4396c2bd6f0a862d8a1500b3c64fbe7a4ec6c19
     icon: https://raw.githubusercontent.com/rancher/opni-docs/main/docs/assets/icon-opni.svg
     keywords:
     - opni
@@ -47,13 +47,13 @@ entries:
       catalog.cattle.io/release-name: opni-agent
     apiVersion: v2
     appVersion: 0.12.1
-    created: "2023-11-27T22:42:58.395372796Z"
+    created: "2023-11-29T00:54:40.450411212Z"
     dependencies:
     - condition: kube-prometheus-stack.enabled
       name: kube-prometheus-stack
       repository: file://./charts/kube-prometheus-stack
     description: Opni Agent
-    digest: bfcf0ca9c389efb9e3a9562a7a098cf47eb4f626a4543ca3ea06d6758170c81c
+    digest: 61e4fe87e329e8eee744642b5c47f7da12c85f3023762bcdcf791f72f962cca8
     name: opni-agent
     type: application
     urls:
@@ -66,9 +66,9 @@ entries:
       catalog.cattle.io/namespace: opni
       catalog.cattle.io/release-name: opni-crd
     apiVersion: v1
-    created: "2023-11-27T22:41:58.560436962Z"
+    created: "2023-11-29T00:53:29.59012487Z"
     description: Installs the CRDs for Opni.
-    digest: c03935e741fa8c71fc7918153359c93158b07c7b805a32606e86f9422404d4ed
+    digest: b60648d28c6ee726313313048b4da69a62781d2f08e95811df19d45f58099564
     maintainers:
     - email: joe.kralicky@suse.com
       name: Joe Kralicky
@@ -79,4 +79,4 @@ entries:
     urls:
     - assets/opni-crd/opni-crd-0.12.1.tgz
     version: 0.12.1
-generated: "2023-11-27T22:41:58.534010959Z"
+generated: "2023-11-29T00:53:29.562957253Z"
